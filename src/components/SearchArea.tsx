@@ -8,11 +8,9 @@ export function SearchArea(){
           mx="auto"
           my="16"
           px="8"
-          align="center"
-          justify="center"
           direction="column"
         >
-            <Text fontSize={["2xl", "3xl", "4xl"]} fontWeight="bold" mb="4" align="center">
+            <Text fontSize={["2xl", "3xl", "4xl"]} fontWeight="bold" mb="4">
                 Explore repositories<br/> on GitHub.
             </Text>
 
@@ -21,18 +19,16 @@ export function SearchArea(){
                     variant="unstyled"
                     p="4"
                     bg="white"
-                    border="0"
                     borderTopRightRadius="0"
                     borderBottomRightRadius="0"
                     placeholder="Type here" 
                 />
                 <Button
                     type="submit"
-                    py="7"
-                    px={["6" ,"12"]}
-                    borderTopRightRadius="5"
-                    borderBottomRightRadius="5"
-                    borderRadius="0"
+                    px={["2", "8"]}
+                    size="xl"
+                    borderTopLeftRadius="0"
+                    borderBottomLeftRadius="0"
                     colorScheme="green"
                     color="white"
                     _hover={{

@@ -10,7 +10,6 @@ export function Logo(){
             my="12"
             px="8"
             align="center"
-            justify="center"
         >
         <FiGithub size="30px" />
         <Text
