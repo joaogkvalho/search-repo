@@ -1,5 +1,11 @@
+import { Logo } from '../components/Logo'
+import { SearchArea } from '../components/SearchArea'
+
 export default function Home() {
   return (
-    <h1>Search Repo</h1>
+    <>
+      <Logo />
+      <SearchArea />
+    </>
   )
 }
