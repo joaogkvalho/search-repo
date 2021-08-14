@@ -11,7 +11,7 @@ interface RepositoryItemProps {
 
 export function RepositoryItem(props: RepositoryItemProps){
     return(
-        <ListItem bg="white" p="5" w="100%" maxWidth={800} borderRadius="8">
+        <ListItem bg="white" p="5" borderRadius="8">
             <Flex
               align="center"
               justify="space-between"
