@@ -1,8 +1,5 @@
 import { Flex, Text, Input, Button } from '@chakra-ui/react'
-import { ToastContainer, toast } from 'react-toastify'
 import { Logo } from '../components/Logo'
-
-import 'react-toastify/dist/ReactToastify.css'
 
 import Head from 'next/head'
 import { RepositoryList } from '../components/RepositoryList'
@@ -17,8 +14,6 @@ interface Repository {
 export default function Home() {
   const [repositories, setRepositories] = useState<Repository[]>([])
   const [user, setUser] = useState('')
-
-  const notify = () => toast("User founded")
 
   function searchRepo(){
     fetch(`https://api.github.com/users/${user}/repos`)
@@ -74,7 +69,6 @@ export default function Home() {
             </Flex>
         </Flex>
       
-      <ToastContainer />
       <RepositoryList repositories={repositories} />
     </>
   )

@@ -10,11 +10,12 @@ interface RepositoryItemProps {
 }
 
 export function RepositoryItem(props: RepositoryItemProps){
-    return(
+    return(        
         <ListItem bg="white" p="5" borderRadius="8">
             <Flex
-              align="center"
-              justify="space-between"
+                w={[250, 380, 700]}
+                align="center"
+                justify="space-between"
             >
                 <Box>
                     <Text fontWeight="700">{props.repository.name}</Text>

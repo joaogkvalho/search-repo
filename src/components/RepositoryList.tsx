@@ -23,7 +23,7 @@ export function RepositoryList({ repositories }: RepositoryListProps){
           px="5"
         >
             <UnorderedList styleType="none" spacing="4">
-                { repositories.map(repository => {
+                { repositories.map(repository => {  
                     return(
                         <RepositoryItem key={repository.name} repository={repository}/>
                     )
