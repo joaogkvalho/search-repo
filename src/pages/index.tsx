@@ -15,7 +15,7 @@ export default function Home() {
   const [repositories, setRepositories] = useState<Repository[]>([])
   const [user, setUser] = useState('')
 
-  function searchRepo(){
+  function showRepositories(){
     fetch(`https://api.github.com/users/${user}/repos`)
       .then(response => response.json())
       .then(data => setRepositories(data))
@@ -62,7 +62,7 @@ export default function Home() {
                     _hover={{
                         colorScheme: 'green'
                     }}
-                    onClick={searchRepo}
+                    onClick={showRepositories}
                 >
                     Pesquisar
                 </Button>
