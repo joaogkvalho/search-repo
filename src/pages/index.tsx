@@ -1,4 +1,4 @@
-import { Flex, Text, Input, Button } from '@chakra-ui/react'
+import { Flex, Text, Input, Button, useToast } from '@chakra-ui/react'
 import { Logo } from '../components/Logo'
 
 import Head from 'next/head'
@@ -14,11 +14,25 @@ interface Repository {
 export default function Home() {
   const [repositories, setRepositories] = useState<Repository[]>([])
   const [user, setUser] = useState('')
+  const toast = useToast()
 
-  function showRepositories(){
-    fetch(`https://api.github.com/users/${user}/repos`)
-      .then(response => response.json())
-      .then(data => setRepositories(data))
+
+
+  function searchRepositories(){
+    if(user){
+      fetch(`https://api.github.com/users/${user}/repos`)
+        .then(response => response.json())
+        .then(data => setRepositories(data))
+    } else {
+      toast({
+        title: "Required field",
+        description: "Fill the user field",
+        position: 'top-right',
+        status: "error",
+        duration: 3000,
+        isClosable: true
+      })
+    }
   }
 
   return (
@@ -62,7 +76,7 @@ export default function Home() {
                     _hover={{
                         colorScheme: 'green'
                     }}
-                    onClick={showRepositories}
+                    onClick={searchRepositories}                    
                 >
                     Pesquisar
                 </Button>
