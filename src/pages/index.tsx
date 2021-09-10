@@ -17,7 +17,6 @@ export default function Home() {
   const toast = useToast()
 
 
-
   function searchRepositories(){
     if(user){
       fetch(`https://api.github.com/users/${user}/repos`)
@@ -73,9 +72,6 @@ export default function Home() {
                     borderBottomLeftRadius="0"
                     colorScheme="green"
                     color="white"
-                    _hover={{
-                        colorScheme: 'green'
-                    }}
                     onClick={searchRepositories}                    
                 >
                     Pesquisar
