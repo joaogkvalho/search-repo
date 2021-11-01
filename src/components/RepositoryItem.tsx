@@ -13,7 +13,7 @@ export function RepositoryItem(props: RepositoryItemProps){
     return(        
         <ListItem bg="white" p="5" borderRadius="8">
             <Flex
-                w={[340, 380, 700]}
+                w={"100%"}
                 align="center"
                 justify="space-between"
             >
