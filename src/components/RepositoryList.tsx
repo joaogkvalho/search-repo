@@ -18,9 +18,11 @@ export function RepositoryList({ repositories }: RepositoryListProps){
         <Flex
           w="100%"
           maxWidth={1100}
+          align="center"
+          justify="center"
           mx="auto"
           mb="14"
-          px="5"
+          px="4"          
         >
             <UnorderedList styleType="none" spacing="4">
                 { repositories.map(repository => {  

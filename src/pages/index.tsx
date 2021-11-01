@@ -49,8 +49,9 @@ export default function Home() {
           my="16"
           px="8"
           direction="column"
+          align="center"
         >
-            <Text fontSize={["2xl", "3xl", "4xl"]} fontWeight="bold" mb="4">
+            <Text fontSize={["3xl", "3xl", "4xl"]} fontWeight="bold" mb="8" textAlign="center">
                 Explore repositories<br/> on GitHub.
             </Text>
 

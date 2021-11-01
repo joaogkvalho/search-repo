@@ -7,9 +7,10 @@ export function Logo(){
             w="100%"
             maxWidth={1100}
             mx="auto"
+            align="center"
+            justify="center"
             my="12"
             px="8"
-            align="center"
         >
         <FiGithub size="30px" />
         <Text
