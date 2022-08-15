@@ -1,6 +1,6 @@
 ![search-repo](https://user-images.githubusercontent.com/50122135/181515919-e8089dad-5886-4ade-a20b-752bb2ce28f9.png)
 
-> Status: Developing 🔨
+> Status: Finished ✔️
 
 ### SearchRepo is an application to search repositories of an user on github
 
